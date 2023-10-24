@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Gabriel Vaskon | Home</title>
+</head>
+
+<body>
+    <main id="my-portfolio">
+        <!-- Menu -->
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#welcome-section">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work-section">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Menu End -->
+
+        <!-- Home Section -->
+        <section id="welcome-section">
+
+            <!-- Profile Photo -->
+            <div id="profile-photo">
+                <img src="./src/img/profile-photo.png" alt="">
+                <div class="design-list"></div>
+            </div>
+
+            <!-- Welcome message -->
+            <div id="welcome-message-container">
+                <p class="welcome-message">Hello there!</p>
+                <p class="welcome-message">I am</p>
+                <h1 id="first-name">Gabriel <span id="surname">V</span>askon</h1>
+                <p id="occupation">a Web Developer</p>
+            </div>
+        </section>
+        <!-- Home Section End -->
+
+        <!-- About Section -->
+        <section id="about-section">
+
+            <!-- Background image for the About Section -->
+            <div id="about-background">
+                <img src="./src/img/about-background.png"
+                    alt="Image: Monochrome image of a crow perched atop a stack of books">
+            </div>
+
+            <!-- Hard skills icons and labels -->
+            <div id=about-container>
+                <header class="section-title">
+                    <h2>Hard Skills</h2>
+                </header>
+
+                <ul class="hard-skills">
+                    <li class="skill-list">
+                        <span class="skill">HTML</span>
+                        <div class="skill-container">
+                            <img src="./src/img/html-icon.png" alt="HTML5 icon plated in gold">
+                        </div>
+                    </li>
+
+                    <li class="skill-list">
+                        <span class="skill">CSS</span>
+                        <div class="skill-container">
+                            <img src="./src/img/css-icon.png" alt="CSS3 icon plated in gold">
+                        </div>
+                    </li>
+
+                    <li class="skill-list">
+                        <span class="skill">JavaScript</span>
+                        <div class="skill-container">
+                            <img src="./src/img/javascript-icon.png" alt="JavaScript icon plated in gold">
+                        </div>
+                    </li>
+
+                    <li class="skill-list">
+                        <span class="skill">TypeScript</span>
+                        <div class="skill-container">
+                            <img src="./src/img/typescript-icon.png" alt="TypeScript icon plated in gold">
+                        </div>
+                    </li>
+
+                    <li class="skill-list">
+                        <span class="skill">Angular</span>
+                        <div class="skill-container">
+                            <img src="./src/img/angular-icon.png" alt="Angular icon plated in gold">
+                        </div>
+                    </li>
+
+                    <li class="skill-list">
+                        <span class="skill">Figma</span>
+                        <div class="skill-container">
+                            <img src="./src/img/figma-icon.png" alt="Figma icon plated in gold">
+                        </div>
+                    </li>
+
+                    <li class="skill-list">
+                        <span class="skill">Swagger</span>
+                        <div class="skill-container">
+                            <img src="./src/img/swagger-icon.png" alt="Swagger icon plated in gold">
+                        </div>
+                    </li>
+
+                    <li class="skill-list">
+                        <span class="skill">Jasmine</span>
+                        <div class="skill-container">
+                            <img src="./src/img/jasmine-icon.png" alt="Jasmine icon plated in gold">
+                        </div>
+                    </li>
+
+                    <li class="skill-list">
+                        <span class="skill">Git</span>
+                        <div class="skill-container">
+                            <img src="./src/img/git-icon.png" alt="Git icon plated in gold">
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- My certificates/My skills button -->
+                <a href="./certificates.html">
+                    <button type="button" class="btn my-custom-button" id="myCertificatesButton">My Certificates
+                    </button>
+                </a>
+            </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Work Section -->
+        <section id="work-section">
+
+            <header class="section-title">
+                <h2>These are some of my projects</h2>
+            </header>
+
+            <!-- Background image for the Work Section -->
+            <div id="work-background">
+                <img src="./src/img/projects-background.png" alt="Image: Meditating Buddha Marble statue">
+            </div>
+
+            <!-- Projects Carousel Larger Screens Begins -->
+            <div class="project-container">
+                <div id="carouselProjects" class="carousel slide carousel-dark d-none d-sm-block" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper">
+                                <div class="project-card">
+                                    <img src="./src/img/card-portfolio.png" alt="Card: Portfolio Project">
+                                    <p class="project-name">Portfolio</p>
+                                </div>
+                                <div class="project-card">
+                                    <img src="./src/img/card-tribute-page.png" alt="Card: Tribute Page Project">
+                                    <p class="project-name">Tribute Page</p>
+                                </div>
+                                <div class="project-card">
+                                    <img src="./src/img/card-technical-documentation.png"
+                                        alt="Card: Technical Documentation Project">
+                                    <p class="project-name">Document</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="project-card">
+                                    <img src="./src/img/card-survey-form.png" alt="Card: Survey Form Project">
+                                    <p class="project-name">Survey Form</p>
+                                </div>
+                                <div class="project-card">
+                                    <img src="./src/img/card-angular-template.png" alt="Card: Landing Page Project">
+                                    <p class="project-name">Landing Page</p>
+                                </div>
+                                <div class="project-card">
+                                    <img src="./src/img/card-x-men.png" alt="Card: Character Select Project">
+                                    <p class="project-name">X-Men</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            <!-- Projects Carousel Larger Screens Ends -->
+
+            <!-- Projects Carousel Smaller Screens Begins -->
+            <div id="carouselProjectsSmallScreen" class="carousel carousel-dark slide d-sm-none" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="project-card">
+                            <img src="./src/img/card-portfolio.png" alt="Card: Portfolio Project">
+                            <p class="project-name">Portfolio</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <img src="./src/img/card-tribute-page.png" alt="Card: Tribute Page Project">
+                            <p class="project-name">Tribute Page</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <img src="./src/img/card-technical-documentation.png"
+                                alt="Card: Technical Documentation Project">
+                            <p class="project-name">Document</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <img src="./src/img/card-survey-form.png" alt="Card: Survey Form Project">
+                            <p class="project-name">Survey Form</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <img src="./src/img/card-angular-template.png" alt="Card: Landing Page Project">
+                            <p class="project-name">Landing Page</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <img src="./src/img/card-x-men.png" alt="Card: Character Select Project">
+                            <p class="project-name">X-Men</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjectsSmallScreen"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProjectsSmallScreen"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Projects Carousel Smaller Screens Ends -->
+            </div>
+
+
+        </section>
+        <!-- Work Section End -->
+
+        <!-- Contact Section -->
+        <section id="contact-section">
+
+            <!-- Background image for the Contact Section -->
+            <div id="contact-background">
+                <img src="./src/img/contact-background.png" alt="Image: A vintage mailbox in monochrome">
+            </div>
+
+            <div id="contact-container">
+                <header class="section-title">
+                    <h2>Contact</h2>
+                </header>
+
+                <div id="contact-message">
+                    <h4>
+                        Want to discuss potential projects and collaboration opportunities? Please, leave a message!
+                    </h4>
+                </div>
+
+                <form id="contactForm">
+                    <fieldset>
+                        <label for="name" id="name-label"><span>Name:</span>
+                            <input type="text" id="name" name="name" placeholder="e.g. John Doe" pattern="[A-Za-z ]+"
+                                title="Only letters and spaces allowed" required>
+                        </label>
+
+                        <label for="email" id="email-label"><span>Email:</span>
+                            <input type="email" id="email" name="email" placeholder="e.g. johndoe@example.com" required>
+                        </label>
+
+                        <label for="message" id="message-label"><span>Message:</span>
+                            <textarea id="message" name="message" cols="30" rows="3" placeholder="Write it here..."
+                                required></textarea>
+                        </label>
+                    </fieldset>
+                </form>
+
+                <button type="submit" value="Send" form="contactForm" id="submit"
+                    class="btn my-custom-button">Send</button>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+
+        <footer>
+            <!-- General Info -->
+            <div id="general-info">
+                <!-- GitHub -->
+                <div id="social-media">
+                    <a href="https://github.com/Vaskon-G" id="profile-link" target="_blank">
+                        <img src="./src/img/github-icon.png" alt="Github icon plated in gold">
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/vaskon" target="_blank">
+                        <img src="./src/img/linkedin-icon.png" alt="Linkedin icon plated in gold">
+                    </a>
+                </div>
+
+                <!-- My local -->
+                <div id="my-location">
+                    <img src="./src/img/local-icon.png" alt="Local icon plated in gold">
+                    <p>Caucaia, CE - Brasil</p>
+                </div>
+            </div>
+
+            <div id="copyright">
+                <p>© 2023 Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="./src/index.js"></script>
+
+</body>
+
+</html>

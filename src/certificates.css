@@ -1,0 +1,240 @@
+/*General styles*/
+body {
+    font-family: 'Baskervville', serif, sans-serif;
+    background-color: hsl(0, 0%, 0%);
+    color: #F8EEDF;
+}
+
+/*Navbar styles begins*/
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    font-size: 1.25rem;
+    padding-right: 5vw;
+    z-index: 10;
+    background-color: #54462A;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+    margin-right: 1vw;
+}
+
+/*Navbar styles ends*/
+
+/*About-section styles begins*/
+#about-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(180deg, #2B2B2B 0%, #030303 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#about-section .section-title {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    height: 2.5rem;
+    background-color: #1B1B1B;
+    filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.35));
+}
+
+#about-section h2 {
+    width: 11.75rem;
+    height: 2.5rem;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    background: linear-gradient(180deg, #D1AF68 0%, #DBDFC9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about-background img {
+    height: auto;
+    width: 40vw;
+    max-width: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.certified-skills {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 35rem;
+    height: 27rem;
+    padding: 0 2.5rem;
+    border-radius: 1rem;
+    background: rgba(27, 27, 27, 0.85);
+    box-shadow: -8px -8px 20px 0px rgba(0, 0, 0, 0.50);
+    z-index: 1;
+}
+
+.certified-skills .certificate-list img {
+    max-width: 30rem;
+    height: auto;
+}
+
+.certified-skills .certificate {
+    width: 20rem;
+    height: 2.813rem;
+    fill: #2B2B2B;
+    box-shadow: 2px 2px 5px 0px #000 inset;
+    border-radius: 5px;
+    color: #F8EEDF;
+    font-family: Baskervville, serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 5px;
+}
+
+.my-custom-button {
+    width: 12.5rem;
+    height: 2.5rem;
+    font-family: Baskervville, serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, #A78C53 39.58%, #F8EEDF 100%);
+    filter: drop-shadow(6px 6px 20px rgba(0, 0, 0, 0.25));
+    border: none;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: #F8EEDF;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev span, .carousel-control-next span {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 688px) {
+    #about-container {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 588px) {
+    .certified-skills {
+        width: 25.625rem;
+        height: 26rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .certified-skills .certificate-list img {
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .certified-skills .certificate {
+        width: 15rem;
+        height: 2.813rem;
+        font-size: 1.25rem;
+        padding-top: 7px;
+    }
+}
+
+@media (max-width: 412px) {
+    .certified-skills {
+        width: 20.625rem;
+        height: 21rem;
+    }
+
+    .certified-skills .certificate-list img {
+        width: 15rem;
+        height: 12rem;
+    }
+
+    .certified-skills .certificate {
+        width: 15rem;
+        height: 2.813rem;
+        font-size: 1.25rem;
+        padding-top: 7px;
+    }
+}
+
+/*About-section styles ends*/
+
+/*Footer styles begins*/
+footer {
+    position: relative;
+    height: 14rem;
+    width: 100%;
+    background-color: #54462A;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer #copyright {
+    position: absolute;
+    bottom: 0;
+    margin-left: 1rem;
+}
+
+footer #general-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 12rem;
+    bottom: 0;
+    right: 0;
+    margin-right: 10vw;
+}
+
+footer #general-info #social-media {
+    display: flex;
+    justify-content: space-around;
+    width: 10rem;
+}
+
+footer #my-location {
+    display: flex;
+    height: 1.5rem;
+    width: 11rem;
+    justify-content: space-between;
+}
+/*Footer styles ends*/
