@@ -9,9 +9,11 @@ body {
 
 /*Navbar styles begins*/
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    width: 100vw;
     min-height: 10vh;
     font-size: 1.25rem;
     padding-right: 5vw;
@@ -27,6 +29,15 @@ body {
 /*Navbar styles ends*/
 
 /*Welcome-section styles begins*/
+#welcome-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #000 0%, #2B2B2B 100%);
+}
+
 #welcome-section::before {
     content: "";
     background-image: url(../src/img/background-img.jpg);
@@ -34,15 +45,9 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-}
-
-#welcome-section {
-    display: flex;
-    justify-content: center;
     height: 100vh;
+    position: absolute;
+    overflow: hidden;
 }
 
 #profile-photo img {
@@ -53,21 +58,6 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-}
-
-.design-frame {
-    position: absolute;
-    left: -4.85rem;
-    bottom: 0;
-    border-radius: 26.875rem;
-    background: linear-gradient(180deg, #2B2B2B 0%, rgba(43, 43, 43, 0.00) 100%);
-    box-shadow: -2px -4px 20px 0px #080808;
-    height: 26.875rem;
-    width: 20.688rem;
-    max-height: 26.875rem;
-    max-width: 20.688rem;
-    z-index: -1;
-
 }
 
 @media (max-width: 687px) {
