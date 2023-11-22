@@ -330,6 +330,78 @@ a:hover {
 
 /*skills-section styles ends*/
 
+/*About-section styles begins*/
+#about-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+#about-section::before {
+    content: "";
+    background-image: url(../src/img/about-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 90%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#about-section .section-title {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    height: 2.5rem;
+    background-color: #1B1B1B;
+    filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.35));
+}
+
+#about-section h2 {
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    background: linear-gradient(180deg, #D1AF68 0%, #DBDFC9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about-section .about-container {
+    width: 48rem;
+    height: 30rem;
+    flex-shrink: 0;
+    padding: 1.4rem 5rem;
+    border-radius: 1rem;
+    background: rgba(27, 27, 27, 0.85);
+    box-shadow: -8px -8px 20px 0px rgba(0, 0, 0, 0.50);
+}
+
+.about-container h3 {
+    color: #F8EEDF;
+    text-align: center;
+    font-family: Baskervville;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*About-section styles ends*/
+
 /*Work-section styles begins*/
 #work-section {
     position: relative;
@@ -691,7 +763,7 @@ footer #my-location {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 568px){
+@media screen and (max-width: 568px) {
     footer {
         display: flex;
         flex-direction: column;
@@ -699,7 +771,8 @@ footer #my-location {
         justify-content: center;
     }
 
-    footer #copyright, footer #general-info{
+    footer #copyright,
+    footer #general-info {
         position: relative;
         margin: 0 auto;
     }

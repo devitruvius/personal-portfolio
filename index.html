@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
@@ -28,6 +29,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#skills-section">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-section">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#work-section">Work</a>
@@ -63,9 +67,9 @@
         <!-- Skills Section -->
         <section id="skills-section">
 
-            <!-- Background image for the About Section -->
+            <!-- Background image for the Skills Section -->
             <div id="skills-background">
-                <img src="./src/img/about-background.png"
+                <img src="./src/img/skills-background.png"
                     alt="Image: Monochrome image of a crow perched atop a stack of books">
             </div>
 
@@ -147,7 +151,33 @@
                 </a>
             </div>
         </section>
-        <!-- Skills Section End -->
+        <!-- Skills Section Ends -->
+
+        <!-- About Section -->
+        <section id="about-section">
+            <header class="section-title">
+                <h2>Who I am</h2>
+            </header>
+
+            <div class="about-container">
+                <h3>
+                    I am a student of Systems Analysis and Development at UFCA and a Full-Stack Developer in training. I
+                    am driven by a passion for problem-solving and committed to delivering high-quality results.
+                    <br><br>
+                    I completed the Responsive Web Design curriculum at freeCodeCamp, dedicating approximately 300 hours
+                    to refining my Front-End skills in the study of Semantic HTML, CSS, and UX/UI. I excelled in
+                    projects such as the construction of this Portfolio.
+                    <br><br>
+                    Currently, I am studying the C# language for Back-End development at SENAI and integrating this
+                    knowledge significantly into my studies in the Game Development course on Udemy – a personal hobby.
+                    <br><br>
+                    I have a solid foundation in HTML, CSS, JavaScript, Angular framework, Figma editor, and Git version
+                    control. My skills are complemented by a disciplined approach, the ability to learn quickly, and
+                    adaptability in dynamic environments.
+                </h3>
+            </div>
+        </section>
+        <!-- About Section Ends -->
 
         <!-- Work Section -->
         <section id="work-section">
@@ -210,61 +240,62 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-            <!-- Projects Carousel Larger Screens Ends -->
+                <!-- Projects Carousel Larger Screens Ends -->
 
-            <!-- Projects Carousel Smaller Screens Begins -->
-            <div id="carouselProjectsSmallScreen" class="carousel carousel-dark slide d-sm-none" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="project-card">
-                            <img src="./src/img/card-portfolio.png" alt="Card: Portfolio Project">
-                            <p class="project-name">Portfolio</p>
+                <!-- Projects Carousel Smaller Screens Begins -->
+                <div id="carouselProjectsSmallScreen" class="carousel carousel-dark slide d-sm-none"
+                    data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="project-card">
+                                <img src="./src/img/card-portfolio.png" alt="Card: Portfolio Project">
+                                <p class="project-name">Portfolio</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="project-card">
+                                <img src="./src/img/card-tribute-page.png" alt="Card: Tribute Page Project">
+                                <p class="project-name">Tribute Page</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="project-card">
+                                <img src="./src/img/card-technical-documentation.png"
+                                    alt="Card: Technical Documentation Project">
+                                <p class="project-name">Document</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="project-card">
+                                <img src="./src/img/card-survey-form.png" alt="Card: Survey Form Project">
+                                <p class="project-name">Survey Form</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="project-card">
+                                <img src="./src/img/card-angular-template.png" alt="Card: Landing Page Project">
+                                <p class="project-name">Landing Page</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="project-card">
+                                <img src="./src/img/card-x-men.png" alt="Card: Character Select Project">
+                                <p class="project-name">X-Men</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="project-card">
-                            <img src="./src/img/card-tribute-page.png" alt="Card: Tribute Page Project">
-                            <p class="project-name">Tribute Page</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="project-card">
-                            <img src="./src/img/card-technical-documentation.png"
-                                alt="Card: Technical Documentation Project">
-                            <p class="project-name">Document</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="project-card">
-                            <img src="./src/img/card-survey-form.png" alt="Card: Survey Form Project">
-                            <p class="project-name">Survey Form</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="project-card">
-                            <img src="./src/img/card-angular-template.png" alt="Card: Landing Page Project">
-                            <p class="project-name">Landing Page</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="project-card">
-                            <img src="./src/img/card-x-men.png" alt="Card: Character Select Project">
-                            <p class="project-name">X-Men</p>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjectsSmallScreen"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjectsSmallScreen"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjectsSmallScreen"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselProjectsSmallScreen"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <!-- Projects Carousel Smaller Screens Ends -->
+                <!-- Projects Carousel Smaller Screens Ends -->
             </div>
 
 
@@ -286,7 +317,8 @@
 
                 <div id="contact-message">
                     <h4>
-                        Want to discuss potential projects and collaboration opportunities? Please, leave a message! (Under construction!)
+                        Want to discuss potential projects and collaboration opportunities? Please, leave a message!
+                        (Under construction!)
                     </h4>
                 </div>
 
