@@ -352,7 +352,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 60%;
+    width: 100%;
     height: 90%;
     position: absolute;
     overflow: hidden;
@@ -400,6 +400,41 @@ a:hover {
     line-height: normal;
 }
 
+@media (max-width: 688px) {
+    #about-section .about-container {
+        width: 30rem;
+        height: 30rem;
+        padding: 1rem 3rem;
+    }
+
+    .about-container h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 510px) {
+    #about-section .about-container {
+        width: 25rem;
+        height: 31rem;
+        padding: 1rem;
+    }
+
+    .about-container h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 412px) {
+    #about-section .about-container {
+        width: 20rem;
+        height: 31rem;
+        padding: 1rem;
+    }
+
+    .about-container h3 {
+        font-size: 0.9rem;
+    }
+}
 /*About-section styles ends*/
 
 /*Work-section styles begins*/
