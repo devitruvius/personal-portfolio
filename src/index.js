@@ -17,8 +17,3 @@ updateCertificateText();
 const certificateCarousel = document.getElementById('certificateCarousel');
 
 certificateCarousel.addEventListener('slid.bs.carousel', updateCertificateText);
-
-
-
-// Function to update the .selected-project based on the selected .project
-

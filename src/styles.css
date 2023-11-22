@@ -116,8 +116,8 @@ body {
 
 /*Welcome-section styles ends*/
 
-/*About-section styles begins*/
-#about-section {
+/*skills-section styles begins*/
+#skills-section {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -128,7 +128,7 @@ body {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-#about-section .section-title {
+#skills-section .section-title {
     display: flex;
     justify-content: center;
     width: 15rem;
@@ -137,7 +137,7 @@ body {
     filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.35));
 }
 
-#about-section h2 {
+#skills-section h2 {
     font-size: 1.75rem;
     font-style: normal;
     font-weight: 400;
@@ -149,7 +149,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-#about-background img {
+#skills-background img {
     height: auto;
     width: 40vw;
     max-width: 300px;
@@ -250,7 +250,7 @@ a:hover {
     text-decoration: none;
 }
 
-#about-container {
+#skills-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -282,7 +282,7 @@ a:hover {
         height: 4.5rem;
     }
 
-    #about-container {
+    #skills-container {
         height: 75vh;
     }
 
@@ -328,7 +328,7 @@ a:hover {
     }
 }
 
-/*About-section styles ends*/
+/*skills-section styles ends*/
 
 /*Work-section styles begins*/
 #work-section {
