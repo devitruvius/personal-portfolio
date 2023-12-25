@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/certificates.css">
+    <link rel="stylesheet" href="../src/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Gabriel Vasconcelos | Certificates</title>
+</head>
+
+<body>
+    <main id="my-portfolio">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#skills-section">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about-section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#work-section">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact-section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="../pt-br/index.html">
+                <button class="brazil-flag-button">
+                    <img src="../src/img/brazil-flag.png" alt="Português (Brasil)">
+                </button>
+            </a>
+            <a href="../en-us/index.html">
+                <button class="uk-flag-button">
+                    <img src="../src/img/union-jack-flag.png" alt="Inglês">
+                </button>
+            </a>
+        </nav>
+
+        <!-- Skills Section -->
+        <section id="skills-section">
+
+            <!-- Background image for the Skills Section -->
+            <div id="skills-background">
+                <img src="../src/img/skills-background.png"
+                    alt="Image: Monochrome image of a crow perched atop a stack of books">
+            </div>
+
+            <!-- Hard skills icons and labels -->
+            <div id=skills-container>
+                <header class="section-title">
+                    <h2>Hard Skills</h2>
+                </header>
+
+                <!-- Carousel -->
+                <ul class="certified-skills">
+                    <span class="certificate">Placeholder Certificate</span>
+                    <li class="certificate-list">
+                        <div id="certificateCarousel" class="carousel slide carousel-dark" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../src/img/responsive_web_design_certificate.png" class="d-block w-100"
+                                        alt="A freeCodeCamp Responsive Web Design Certificate"
+                                        data-name="Responsive Web Design">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../src/img/responsive_web_design_certificate.png" class="d-block w-100"
+                                        alt="A freeCodeCamp Responsive Web Design Certificate"
+                                        data-name="Responsive Web Design">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#certificateCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#certificateCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- My certificates/My skills button -->
+                <a href="index.html#skills-section">
+                    <button type="button" class="btn my-custom-button" id="myCertificatesButton">My Skills
+                    </button>
+                </a>
+            </div>
+        </section>
+        <!-- Skills Section End -->
+
+        <footer>
+            <div id="copyright">
+                <p>© 2023 All rights reserved.</p>
+            </div>
+
+            <!-- General Info -->
+            <div id="general-info">
+                <!-- GitHub -->
+                <div id="social-media">
+                    <a href="https://github.com/devitruvius" id="profile-link" target="_blank">
+                        <img src="../src/img/github-icon.png" alt="Github icon plated in gold">
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/devitruvius" target="_blank">
+                        <img src="../src/img/linkedin-icon.png" alt="Linkedin icon plated in gold">
+                    </a>
+                </div>
+
+                <!-- My local -->
+                <div id="my-location">
+                    <img src="../src/img/local-icon.png" alt="Local icon plated in gold">
+                    <p>Caucaia, CE - Brazil</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="../src/index.js"></script>
+
+</body>

@@ -26,6 +26,40 @@ body {
     margin-right: 1vw;
 }
 
+.navbar .brazil-flag-button {
+    height: 20px;
+    width: 30px;
+    padding: 0;
+    margin: 0 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .brazil-flag-button img {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.navbar .uk-flag-button {
+    height: 20px;
+    width: 30px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .uk-flag-button img {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
 /*Navbar styles ends*/
 
 /*Welcome-section styles begins*/
