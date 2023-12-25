@@ -363,7 +363,7 @@ a:hover {
     display: flex;
     justify-content: center;
     width: 15rem;
-    height: 2.5rem;
+    height: 2.7rem;
     background-color: #1B1B1B;
     filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.35));
 }
@@ -383,6 +383,10 @@ a:hover {
 #about-section .about-container {
     width: 48rem;
     height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     flex-shrink: 0;
     padding: 1.4rem 5rem;
     border-radius: 1rem;
@@ -457,7 +461,7 @@ a:hover {
     display: flex;
     justify-content: center;
     width: 27rem;
-    height: 2.5rem;
+    height: 2.7rem;
     background-color: #1B1B1B;
     filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.35));
 }
