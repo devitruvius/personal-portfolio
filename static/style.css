@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+    font-family: "Noto Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #020204;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    padding: 0 15px;
+    z-index: 9997;
+}
+
+#header .profile {
+    margin: 0 auto;
+}
+
+#header .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #204829;
+    border-radius: 50%;
+}
+
+#header .profile h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    color: #fff;
+}
+
+#header .profile .social-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#header .profile .social-links a {
+    font-size: 1rem;
+    background: #213126;
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    text-decoration: none;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#header .profile .social-links a:hover {
+    background: #22b455;
+}
+
+.nav-menu {
+    padding: 1.5rem;
+}
+
+.nav-menu i {
+    margin-right: 0.4rem;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+    display: flex;
+    align-items: center;
+    color: #92e5a1;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.nav-menu a,
+.nav-menu a:focus i {
+    font-size: 20px;
+    color: #92ca97;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
+    color: #22b455;
+}
+
+#main {
+    margin-left: 300px;
+}
+
+#inicio {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: -9996;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -9995;
+}
+
+section#inicio {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+section#inicio h2 {
+    font-size: 6rem;
+}
+
+section#inicio span#subtitle {
+    margin-right: 8rem;
+    font-size: 1.5rem;
+}
+
+.text-shadow {
+    text-shadow: 4px 4px 10px #000;
+}
+
+section#inicio div#arraste {
+    width: 9rem;
+}
+
+section#inicio div#arraste a {
+    text-decoration: none;
+    color: #fff;
+}
