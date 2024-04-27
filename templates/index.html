@@ -35,7 +35,8 @@
         <nav id="navbar" class="nav-menu">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house" aria-hidden="true"></i> Início</a>
+                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"
+                            aria-hidden="true"></i> Início</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
@@ -58,26 +59,62 @@
 
     <main id="main">
         <section id="inicio" class="row m-0 p-0">
-            <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
+            <div class="container col-md-5 d-flex justify-content-center align-items-center flex-column video-container">
                 <h2 class="text-white text-shadow">Devitruvius</h2>
                 <span id="subtitle" class="text-white text-shadow">Python Developer</span>
-            </div>
-            <div class="col-md-7 d-flex justify-content-end align-items-end">
-                <div id="arraste" class="d-flex align-items-center">
-                    <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
-                    <a href="">Arraste para mais</a>
-                </div>
-                
-            </div>
-            <div class="video-container">
-                <video autoplay muted loop id="video-background">
+                <video autoplay muted loop class="video-background">
                     <source src="../static/img/cryptocode-matrix-animation.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
-                <div class="overlay"></div>
+            </div>
+            
+            <div class="interactive-arrow">
+                <i class="bi bi-arrow-down d-flex justify-content-center align-items-center flex-column text-white fs-3"
+                    aria-hidden="true"></i>
+            </div>
+        </section>
+        <section class="container mt-5" id="sobre">
+            <div class="row w-100">
+                <div class="col-md-12">
+                    <h2 class="pt-3">A Alquimia do Desenvolvimento de Software</h2>
+                    <h3><b>Em Cada Problema, uma Oportunidade para Transformação</b></h3>
+                    <p>
+                        <b>Inspirado pelo lendário arquiteto Vitruvius, encaro o desenvolvimento de software como um
+                            processo alquímico, criando soluções meticulosamente que transcendem a mera resolução de
+                            problemas. Cada desafio é uma oportunidade para criar algo extraordinário, empoderar
+                            usuários e inspirar mudanças.
+                    </p>
+                    <h3><b>Um Percurso de Dedicação e Conhecimento</b></h3>
+                    <p>
+                        Atualmente cursando Análise e Desenvolvimento de Sistemas na UFCA, me dedico à busca por
+                        conhecimento e autoaperfeiçoamento. Minha ambição é me tornar um desenvolvedor experiente e
+                        respeitado, capaz de enfrentar os desafios mais complexos com maestria e engenhosidade.
+                    </p>
+                    <h3><b>Além do Digital</b></h3>
+                    <p>Quando me afasto do mundo digital, busco refúgio em hobbies que nutrem minha mente e aprimoram
+                        minhas habilidades. Sou um entusiasta de Magic: The Gathering, onde a resolução criativa de
+                        problemas é o caminho para a vitória.
+
+                        Leitor voraz de graphic novels, particularmente Sandman e X-Men, mergulho em universos
+                        fantásticos que expandem meus horizontes. E, claro, o desenvolvimento de jogos é uma paixão que
+                        me permite unir criatividade com tecnologia, criando experiências únicas e envolventes.</p>
+                    <h3><b>Uma Abordagem Estratégica para Resolução de Problemas</b></h3>
+                    <p>Acredito que a resolução de problemas não se resume a encontrar soluções imediatas, mas sim a um
+                        processo meticuloso e estratégico. Constantemente refino minhas habilidades revisitando códigos
+                        antigos e buscando novas perspectivas.
+
+                        Essa abordagem me permite desenvolver soluções mais robustas, eficientes e escaláveis, que
+                        atendem de forma elegante e eficaz às necessidades dos usuários.</p>
+                    <h3><b>Transformando Ideias em Realidade</b></h3>
+                    <p>Para além da teoria, acredito no poder da prática para transformar ideias em soluções
+                        impactantes.
+
+                        Explore meus projetos mais recentes, onde coloco minha expertise à prova.</p>
+                </div>
             </div>
         </section>
     </main>
-    
+
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>

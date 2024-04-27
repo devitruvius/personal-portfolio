@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Glitch&family=Sawarabi+Gothic&display=swap');@font-face {
+    font-family: 'Matrix-Regular';
+    src: url(../static/assets/matrix-font.ttf) format('truetype');
+}
 
 html,
 body {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Sawarabi Gothic", sans-serif;
     width: 100%;
     height: 100%;
 }
@@ -17,7 +21,7 @@ body {
     width: 300px;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
-    z-index: 9997;
+    z-index: 11;
 }
 
 #header .profile {
@@ -46,9 +50,13 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    justify-items: center;
 }
 
 #header .profile .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1rem;
     background: #213126;
     color: #fff;
@@ -69,7 +77,7 @@ body {
 }
 
 .nav-menu i {
-    margin-right: 0.4rem;
+    margin-right: 0.8rem;
 }
 
 .nav-menu a,
@@ -113,42 +121,74 @@ body {
     height: 100vh;
 }
 
-#video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
-    z-index: -9996;
+.interactive-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -9995;
+.interactive-arrow:hover {
+    background-color: #22b455;
 }
 
 section#inicio {
-    position: fixed;
+    background: url('../static/img/inicio-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
 section#inicio h2 {
     font-size: 6rem;
+    font-family: 'Matrix-Regular', sans-serif;
+    letter-spacing: 0.175em;
+    text-align: center;
+    text-shadow: 4px 4px 8px #000;
+    z-index: 2;
 }
 
 section#inicio span#subtitle {
-    margin-right: 8rem;
     font-size: 1.5rem;
+    font-family: 'Matrix-Regular', sans-serif;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 4px #000;
+    z-index: 2;
+}
+
+section#inicio .container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 100vw;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    box-shadow: 0 0 20px 6px #bebebe;
+    height: 250px;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .text-shadow {
