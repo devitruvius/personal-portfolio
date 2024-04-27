@@ -155,16 +155,16 @@ section#inicio h2 {
     font-family: 'Matrix-Regular', sans-serif;
     letter-spacing: 0.175em;
     text-align: center;
-    text-shadow: 4px 4px 8px #000;
-    z-index: 2;
+    text-shadow: 3px 3px 6px #b9b9b9;
+    z-index: 4;
 }
 
 section#inicio span#subtitle {
     font-size: 1.5rem;
     font-family: 'Matrix-Regular', sans-serif;
     letter-spacing: 0.1em;
-    text-shadow: 2px 2px 4px #000;
-    z-index: 2;
+    text-shadow: 1px 1px 2px #9b9b9b;
+    z-index: 4;
 }
 
 section#inicio .container {
@@ -173,7 +173,7 @@ section#inicio .container {
     width: 100vw;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
-    box-shadow: 0 0 20px 6px #bebebe;
+    box-shadow: 0 0 21px 2px #dddddd;
     height: 250px;
 }
 
@@ -189,6 +189,17 @@ section#inicio .container {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 11px 11px -11px rgba(255, 255, 255, 0.959), inset 0 -11px 11px -11px rgba(255, 255, 255, 0.9);
+    z-index: 2; 
 }
 
 .text-shadow {
