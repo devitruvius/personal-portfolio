@@ -17,7 +17,7 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    background: #020204;
+    background: #000000;
     width: 300px;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
@@ -32,7 +32,7 @@ body {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 8px solid #204829;
+    border: 8px solid hsl(0, 0%, 41%);
     border-radius: 50%;
 }
 
@@ -58,7 +58,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    background: #213126;
+    background: #171716;
     color: #fff;
     padding: 0.6rem;
     border-radius: 50%;
@@ -69,7 +69,7 @@ body {
 }
 
 #header .profile .social-links a:hover {
-    background: #22b455;
+    background: #a0a0a0;
 }
 
 .nav-menu {
@@ -84,15 +84,9 @@ body {
 .nav-menu a:focus {
     display: flex;
     align-items: center;
-    color: #92e5a1;
-    transition: 0.3s;
+    color: #747474;
+    transition: color 0.3s;
     font-size: 20px;
-}
-
-.nav-menu a,
-.nav-menu a:focus i {
-    font-size: 20px;
-    color: #92ca97;
 }
 
 .nav-menu a:hover,
@@ -100,14 +94,20 @@ body {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
     text-decoration: none;
-    color: #fff;
+    color: #e6e6e6;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+    font-size: 20px;
+    color: #b8b8b8;
 }
 
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-    color: #22b455;
+    color: #fff;
 }
 
 #main {
@@ -136,7 +136,7 @@ body {
 }
 
 .interactive-arrow:hover {
-    background-color: #22b455;
+    background-color: #a1a1a1;
 }
 
 section#inicio {
@@ -162,7 +162,7 @@ section#inicio h2 {
 section#inicio span#subtitle {
     font-size: 1.5rem;
     font-family: 'Matrix-Regular', sans-serif;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.125em;
     text-shadow: 1px 1px 2px #9b9b9b;
     z-index: 4;
 }
@@ -189,6 +189,7 @@ section#inicio .container {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: grayscale(20%);
 }
 
 .video-overlay {
@@ -197,7 +198,7 @@ section#inicio .container {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: inset 0 11px 11px -11px rgba(255, 255, 255, 0.959), inset 0 -11px 11px -11px rgba(255, 255, 255, 0.9);
     z-index: 2; 
 }
@@ -218,7 +219,7 @@ section#inicio div#arraste a {
 i.menu-mobile {
     position: fixed;
     color: #fff;
-    background-color: #204829;
+    background-color: #2e2e2c;
     right: 1rem;
     top: 1rem;
     font-size: 1.5rem;
