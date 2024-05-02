@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Glitch&family=Sawarabi+Gothic&display=swap');@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
     font-family: 'Matrix-Regular';
     src: url(../static/assets/matrix-font.ttf) format('truetype');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
-    font-family: "Sawarabi Gothic", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
     width: 100%;
     height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #3f3f3f #fff;
 }
 
 #header {
@@ -140,7 +149,8 @@ body {
 }
 
 section#inicio {
-    background: url('../static/img/inicio-background.jpg');
+    background: url('../static/img/inicio-background-2.jpg');
+    background-attachment:scroll;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -200,7 +210,7 @@ section#inicio .container {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: inset 0 11px 11px -11px rgba(255, 255, 255, 0.959), inset 0 -11px 11px -11px rgba(255, 255, 255, 0.9);
-    z-index: 2; 
+    z-index: 2;
 }
 
 .text-shadow {
@@ -245,18 +255,44 @@ i.menu-mobile {
     #header {
         left: -300px;
     }
+
     i.menu-mobile {
         display: flex;
     }
+
     section#inicio h2 {
         font-size: 3.5rem;
     }
-    section#inicio span#subtitle{
+
+    section#inicio span#subtitle {
         margin-right: 0;
         font-size: 1rem;
     }
-    #main{
+
+    #main {
         margin-left: 0;
     }
+}
 
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    width: 12px;
+    box-shadow: inset 0 0 .3rem #00000050;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #2e2e2c;
+}
+
+a[href="#sobre"] {
+    text-decoration: none;
+    outline: none;
+}
+
+.section-bg {
+    background-color: #eeeeee;
 }

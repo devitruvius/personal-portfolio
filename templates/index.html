@@ -35,23 +35,28 @@
         <nav id="navbar" class="nav-menu">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"
+                    <a class="nav-link active" aria-current="page" href="#inicio"><i class="bi bi-house"
                             aria-hidden="true"></i> Início</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
+                    <a class="nav-link" href="#sobre"><i class="bi bi-person" aria-hidden="true"></i>
+                        Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-list-check" aria-hidden="true"></i> Habilidades</a>
+                    <a class="nav-link" href="#habilidades"><i class="bi bi-list-check" aria-hidden="true"></i>
+                        Habilidades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-file-earmark" aria-hidden="true"></i> Currículo</a>
+                    <a class="nav-link" href="#curriculo"><i class="bi bi-file-earmark" aria-hidden="true"></i>
+                        Currículo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-collection" aria-hidden="true"></i> Portfólio</a>
+                    <a class="nav-link" href="#portfolio"><i class="bi bi-collection" aria-hidden="true"></i>
+                        Portfólio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-envelope" aria-hidden="true"></i> Contato</a>
+                    <a class="nav-link" href="#contato"><i class="bi bi-envelope" aria-hidden="true"></i>
+                        Contato</a>
                 </li>
             </ul>
         </nav>
@@ -62,7 +67,7 @@
             <div
                 class="container col-md-5 d-flex justify-content-center align-items-center flex-column video-container">
                 <h2 class="text-white text-shadow">Devitruvius</h2>
-                <span id="subtitle" class="text-white text-shadow">Python Developer</span>
+                <span id="subtitle" class="text-white text-shadow">Systems Analysis and Development</span>
                 <div class="video-overlay"></div>
                 <video autoplay muted loop class="video-background">
                     <source src="../static/img/cryptocode-matrix-animation.mp4" type="video/mp4">
@@ -71,30 +76,23 @@
             </div>
 
             <div class="interactive-arrow">
-                <i class="bi bi-arrow-down d-flex justify-content-center align-items-center flex-column text-white fs-3"
-                    aria-hidden="true"></i>
+                <a href="#sobre"><i
+                        class="bi bi-arrow-down d-flex justify-content-center align-items-center flex-column text-white fs-3"
+                        aria-hidden="true"></i></a>
             </div>
         </section>
+
         <section class="container mt-5" id="sobre">
             <div class="row w-100">
                 <div class="col-md-12">
                     <h2 class="pt-3">Sobre</h2>
                     <p>
-                        Estudante de Análise e Desenvolvimento de Sistemas pela UFCA em busca de me tornar um Arquiteto
-                        de Software experiente. Acredito no poder transformador do software e me dedico a aprimorar
-                        minhas habilidades para alcançar esse objetivo.
-
-                        Possuo base sólida em Python, lógica de programação, estrutura de dados e algoritmos. Também
-                        possuo expertise em Engenharia de Requisitos, seguindo as melhores práticas da IEEE Std 830, o
-                        que me permite analisar e modelar sistemas de forma abrangente, desde a concepção até a
-                        implementação.
-
-                        Além disso, sou Game Programmer, empenhado no desenvolvimento do meu primeiro RPG tático
-                        utilizando a Godot Engine, experiência que está me permitindo aprimorar minhas habilidades em
-                        design, lógica de programação e gerenciamento de projetos.
-
-                        Com dedicação, trabalho duro e uma mente aberta, busco contribuir para o desenvolvimento de
-                        soluções transformadoras.
+                        Graduando em ADS pela UFCA em busca de oportunidades que me aproximem do meu
+                        objetivo de me tornar um Arquiteto de Software. Acredito no poder transformador da tecnologia e
+                        estou constantemente aprimorando minhas habilidades em Python, Análise e Especificação de
+                        Requisitos (IEEE Std 830), Desenvolvimento Web, Banco de Dados e Inteligência Artificial. Possuo
+                        experiência prática em Desenvolvimento de Jogos com a Godot Engine e busco
+                        contribuir para soluções inovadoras com dedicação, mente aberta e trabalho em equipe.
                     </p>
                 </div>
             </div>
@@ -106,20 +104,125 @@
                 <div class="col-md-8">
                     <h3>Voluntariado</h3>
                     <p>
-                        Atualmente sou voluntário no Grupo de Estudos em Sistemas de Informação e Inovação
-                        Digital (GESID) da UFCA, contribuindo para um Projeto de Extensão envolvendo o desenvolvimento
-                        de uma API pública utilizando o Flask framework. Essa API deve facilitar o acesso à
-                        informação para pesquisadores, estudantes e profissionais da área de software, permitindo a
-                        consulta de artigos científicos relevantes.
+                        Atualmente sou voluntário no Grupo de Estudos em Sistemas de Informação e Inovação Digital
+                        (GESID) da UFCA, contribuindo para um Projeto de Extensão envolvendo o desenvolvimento de uma
+                        API pública utilizando o Flask. Essa API deve facilitar o acesso à informação para
+                        pesquisadores, estudantes e profissionais da área de software.
                     </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush fs-6">
+                                <li class="list-group-item">
+                                    Comunicação e Alinhamento: <span class="fw-light">Definir objetivos
+                                        e expectativas.</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Configurar o Ambiente: <span class="fw-light">Instalação do Python e demais
+                                        ferramentas.</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Swagger: <span class="fw-light">Para
+                                        documentar a API de forma eficaz.</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Flask: <span class="fw-light">Para construção de uma API robusta e
+                                        escalável.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush fs-6">
+                                <li class="list-group-item">
+                                    Gerenciamento de Projeto: <span class="fw-light">Metodologias ágeis
+                                        (SCRUM).</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Curadoria de Conteúdo: <span class="fw-light">Coletar e formatar informações numa
+                                        planilha.</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Implementação de Soluções: <span class="fw-light">Criar as rotas e a lógica da
+                                        API.</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Testes Unitários: <span class="fw-light">Garantir a qualidade e confiabilidade da
+                                        API.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                 </div>
+            </div>
+        </section>
+
+        <section class="mt-5 section-bg" id="habilidades">
+            <div class="container pb-5">
+                <h2 class="pt-5">Habilidades</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat autem beatae quam ullam quis
+                    aperiam nam vero enim, saepe laborum voluptate iste, animi accusantium velit dignissimos alias,
+                    harum error dicta?
+                </p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0">HTML</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                        </div>
+                        <p class="mt-3 mb-0">CSS</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                        </div>
+                        <p class="mt-3 mb-0">JavaScript</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                        </div>
+                        <p class="mt-3 mb-0">Python</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                        </div>
+                        <p class="mt-3 mb-0">TypeScript</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
-
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a[href^='#']").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
