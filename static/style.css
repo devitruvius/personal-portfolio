@@ -359,3 +359,14 @@ a[href="#sobre"] {
         transform: translate3d(0, 100%, 0);
     }
 }
+
+#btn-enviar-loader {
+    display: none;
+}
+
+#alerta {
+    position: fixed;
+    z-index: 15;
+    top: 30px;
+    right: 30px;
+}

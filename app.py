@@ -19,9 +19,9 @@ mail = Mail(app)
 
 class Contato:
     def __init__(self, nome, email, mensagem):
-        self.nome = nome;
-        self.email = email;
-        self.mensagem = mensagem;
+        self.nome = nome
+        self.email = email
+        self.mensagem = mensagem
 
 @app.route('/')
 def index():
