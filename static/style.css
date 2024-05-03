@@ -30,7 +30,7 @@ body {
     width: 300px;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
-    z-index: 11;
+    z-index: 15;
 }
 
 #header .profile {
@@ -369,4 +369,25 @@ a[href="#sobre"] {
     z-index: 15;
     top: 30px;
     right: 30px;
+}
+
+#footer {
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 16;
+    background-color: #000000;
+    transition: .3s;
+}
+
+@media (max-width: 1012px) {
+    #footer{
+        position: static;
+        width: auto;
+        padding: 20px 15px;
+    }
 }
