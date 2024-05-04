@@ -68,9 +68,13 @@ Replace <code>your_email@example.com</code> and <code>your_password</code> with 
 
 For production deployment, consider using a web hosting service like Heroku or PythonAnywhere that supports Flask applications. You'll need to configure the server and potentially adjust Flask settings for production environments. Refer to the documentation of your chosen hosting service for specific instructions.
 
-## Additional Considerations
+## Additional Notes
 
 * **Error Handling**: Implement robust error handling to handle potential exceptions during form submission or email sending.
 * **Security**: Securely store email credentials (possibly using environment variables) and consider using a reputable email sending service for enhanced security.
 * **Scalability**: If you anticipate high traffic, plan for scaling your application (e.g., using a cloud-based solution).
 * **Testing**: Write unit tests to ensure the application's functionality, especially the contact form and email sending logic.
+
+## License
+
+This project is licensed under the MIT License.
