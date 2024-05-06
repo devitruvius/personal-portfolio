@@ -239,6 +239,7 @@
                         <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
+
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
 
@@ -434,6 +435,7 @@
                         </div>
 
                     </div>
+
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -448,26 +450,27 @@
 
                 <div id="carouselPortfolioSmallScreen" class="carousel carousel-dark slide d-sm-none">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="3"
+                        <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="3"
                             aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="4"
+                        <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="4"
                             aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="5"
+                        <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="5"
                             aria-label="Slide 6"></button>
-                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="6"
+                        <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="6"
                             aria-label="Slide 7"></button>
-                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="7"
+                        <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="7"
                             aria-label="Slide 8"></button>
-                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="8"
+                        <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="8"
                             aria-label="Slide 9"></button>
 
                     </div>
+
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
 
@@ -508,7 +511,7 @@
                                                 para estilização, a aplicação permite que eu apresente meus projetos,
                                                 habilidades e outras informações de forma interativa.
                                                 Também inclui um formulário de contato que envia emails
-                                                automaticamente para meu endereço de email.</p>
+                                                automaticamente.</p>
                                             <div class="d-flex justify-content-center">
                                                 <a target="_blank"
                                                     href="https://github.com/devitruvius/personal-portfolio"
@@ -558,8 +561,8 @@
                                         <div class="card-body">
                                             <h5 class="card-title">Yahoo Finances Automation</h5>
                                             <p class="card-text">Script Python que automatiza a análise de
-                                                dados de ações e envio de relatórios por email. Usa as
-                                                bibliotecas yfinance para obter dados de preços, pyautogui para
+                                                dados de ações e envio de relatórios. Usa as
+                                                bibliotecas yfinance para obter os dados, pyautogui para
                                                 automatizar interações com o Gmail e pyperclip para colar dados
                                                 entre a aplicação e a área de transferência.</p>
                                             <div class="d-flex justify-content-center">
@@ -586,9 +589,8 @@
                                             <h5 class="card-title">Tax Calculation System</h5>
                                             <p class="card-text">Programa em C# para calcular o imposto de renda. O
                                                 sistema considera o tipo de contribuinte (física ou jurídica), suas
-                                                informações pessoais (nome, endereço, CPF ou CNPJ e IE) e o valor da
-                                                compra. Em seguida, calcula o imposto devido e exibe o valor total a
-                                                ser pago.</p>
+                                                informações pessoais e o valor da compra. Em seguida, calcula o imposto
+                                                e exibe o valor total a ser pago.</p>
                                             <div class="d-flex justify-content-center">
                                                 <a target="_blank" href="https://github.com/devitruvius/tax-calculation"
                                                     class="btn btn-outline-secondary"><i
@@ -610,11 +612,10 @@
                                             alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Landing Page Template</h5>
-                                            <p class="card-text">O projeto demonstra minhas habilidades
-                                                na criação de aplicações web modernas e responsivas utilizando o
+                                            <p class="card-text">Aplicação web modernas e responsiva utilizando o
                                                 framework Angular. A aplicação foi desenvolvida seguindo as melhores
-                                                práticas e padrões do Angular CLI, garantindo um código limpo, modular e
-                                                bem documentado.</p>
+                                                práticas e padrões do Angular CLI e Angular Material, garantindo um
+                                                código limpo, modular e bem documentado.</p>
                                             <div class="d-flex justify-content-center">
                                                 <a target="_blank"
                                                     href="https://github.com/devitruvius/landing-page-template"
@@ -707,13 +708,14 @@
                     </div>
 
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolioSmallScreen"
-                    data-bs-slide="prev">
+
+                <button class="carousel-control-prev d-sm-none" type="button"
+                    data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolioSmallScreen"
-                    data-bs-slide="next">
+                <button class="carousel-control-next d-sm-none" type="button"
+                    data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>

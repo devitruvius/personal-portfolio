@@ -275,6 +275,12 @@ i.menu-mobile {
     }
 }
 
+@media (max-width: 1180px) {
+    section#sobre h3 {
+        margin-top: 2.5rem;
+    }
+}
+
 section#habilidades .row {
     margin-top: 2rem;
 }
@@ -311,21 +317,13 @@ a[href="#sobre"] {
     object-fit: cover;
 }
 
-.carousel-control-prev {
-    margin-left: -0.6rem;
-}
-
-.carousel-control-next {
-    margin-right: -0.6rem;
-}
-
 .carousel-indicators {
     margin-bottom: -35px;
 }
 
 .carousel-item {
     transition: transform 0.7s ease-in-out;
-  }
+}
 
 .carousel-control-prev, .carousel-control-next {
     background-color: #e1e1e1;
@@ -336,6 +334,18 @@ a[href="#sobre"] {
     transform: translateY(-50%);
 }
 
+@media screen and (min-width: 567px) {
+
+.carousel-control-prev {
+    margin-left: -0.6rem;
+}
+
+.carousel-control-next {
+    margin-right: -0.6rem;
+}
+
+}
+
 #carouselPortfolioSmallScreen .col {
     display: flex;
     align-items: center;
@@ -344,6 +354,10 @@ a[href="#sobre"] {
 
 #carouselPortfolioSmallScreen .card {
     width: 80vw;
+}
+
+#carouselPortfolioSmallScreen .card-body {
+    height: 274px;
 }
 
 /* Animação */
