@@ -356,8 +356,8 @@ a[href="#sobre"] {
     width: 80vw;
 }
 
-#carouselPortfolioSmallScreen .card-body {
-    height: 274px;
+#carouselPortfolio .card-body, #carouselPortfolioSmallScreen .card-body {
+    height: 284px;
 }
 
 /* Animação */
