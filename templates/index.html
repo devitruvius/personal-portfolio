@@ -230,7 +230,7 @@
             <div class="container pb-5 pt-5" data-anime="left">
                 <h2 class="pb-4">Portfólio</h2>
 
-                <div id="carouselPortfolio" class="carousel carousel-dark slide">
+                <div id="carouselPortfolio" class="carousel carousel-dark slide d-none d-sm-block">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -445,6 +445,279 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+
+                <div id="carouselPortfolioSmallScreen" class="carousel carousel-dark slide d-sm-none">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="7"
+                            aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#carouselPortfolioSmallScreen" data-bs-slide-to="8"
+                            aria-label="Slide 9"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/card-snake-game.png" class="card-img card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Snake Game</h5>
+                                            <p class="card-text">
+                                                Controle a cobra, coma comida e evite colisões! O jogo utiliza Pygame
+                                                para gráficos, eventos e lógica. Este projeto demonstra minhas
+                                                habilidades em programação de jogos, manipulação de eventos e
+                                                implementação de lógica de jogo.</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a target="_blank" href="https://github.com/devitruvius/snake_game"
+                                                    class="btn btn-outline-secondary"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/card-portfolio.png" class="card-img card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Personal Portfolio</h5>
+                                            <p class="card-text">Utilizando o Flask em Python e Bootstrap
+                                                para estilização, a aplicação permite que eu apresente meus projetos,
+                                                habilidades e outras informações de forma interativa.
+                                                Também inclui um formulário de contato que envia emails
+                                                automaticamente para meu endereço de email.</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a target="_blank"
+                                                    href="https://github.com/devitruvius/personal-portfolio"
+                                                    class="btn btn-outline-secondary"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/card-gerador-orcamento.png"
+                                            class="card-img card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Budget Generator</h5>
+                                            <p class="card-text">Ferramenta automatizada para gerar orçamentos de
+                                                projetos em PDF. A partir da descrição do projeto, horas estimadas,
+                                                valor da hora trabalhada e prazo estimado, o script calcula o valor
+                                                total estimado e gera um PDF com as informações detalhadas.</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a target="_blank"
+                                                    href="https://github.com/devitruvius/budget_generator"
+                                                    class="btn btn-outline-secondary"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/card-yahoo-finances.png" class="card-img card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Yahoo Finances Automation</h5>
+                                            <p class="card-text">Script Python que automatiza a análise de
+                                                dados de ações e envio de relatórios por email. Usa as
+                                                bibliotecas yfinance para obter dados de preços, pyautogui para
+                                                automatizar interações com o Gmail e pyperclip para colar dados
+                                                entre a aplicação e a área de transferência.</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a target="_blank"
+                                                    href="https://github.com/devitruvius/sistema_automacao_yahoo_finances"
+                                                    class="btn btn-outline-secondary"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/card-customer.png" class="card-img card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tax Calculation System</h5>
+                                            <p class="card-text">Programa em C# para calcular o imposto de renda. O
+                                                sistema considera o tipo de contribuinte (física ou jurídica), suas
+                                                informações pessoais (nome, endereço, CPF ou CNPJ e IE) e o valor da
+                                                compra. Em seguida, calcula o imposto devido e exibe o valor total a
+                                                ser pago.</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a target="_blank" href="https://github.com/devitruvius/tax-calculation"
+                                                    class="btn btn-outline-secondary"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/card-landing-page.png" class="card-img card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Landing Page Template</h5>
+                                            <p class="card-text">O projeto demonstra minhas habilidades
+                                                na criação de aplicações web modernas e responsivas utilizando o
+                                                framework Angular. A aplicação foi desenvolvida seguindo as melhores
+                                                práticas e padrões do Angular CLI, garantindo um código limpo, modular e
+                                                bem documentado.</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a target="_blank"
+                                                    href="https://github.com/devitruvius/landing-page-template"
+                                                    class="btn btn-outline-secondary"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/card-api.png" class="card-img card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Public API</h5>
+                                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                elit. Tenetur expedita, ipsam dolorem quia doloribus velit consequuntur
+                                                earum at neque aliquam harum quos omnis voluptates perferendis quas
+                                                doloremque maiores aspernatur qui..</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a target="_blank" href="https://github.com/devitruvius/snake_game"
+                                                    class="btn btn-outline-secondary"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/card-controller.png" class="card-img card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tactical RPG</h5>
+                                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                elit. Tenetur expedita, ipsam dolorem quia doloribus velit consequuntur
+                                                earum at neque aliquam harum quos omnis voluptates perferendis quas
+                                                doloremque maiores aspernatur qui..</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a target="_blank"
+                                                    href="https://github.com/devitruvius/personal-portfolio-flask"
+                                                    class="btn btn-outline-secondary"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/card-graduate.png" class="card-img card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">College Repository</h5>
+                                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                elit. Tenetur expedita, ipsam dolorem quia doloribus velit consequuntur
+                                                earum at neque aliquam harum quos omnis voluptates perferendis quas
+                                                doloremque maiores aspernatur qui..</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a target="_blank"
+                                                    href="https://github.com/devitruvius/sistema_gerador_orcamento_consultoria"
+                                                    class="btn btn-outline-secondary"><i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolioSmallScreen"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolioSmallScreen"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
             </div>
         </section>
 
