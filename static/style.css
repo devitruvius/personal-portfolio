@@ -132,26 +132,26 @@ body {
 
 .scroll-btn-wrapper {
     display: block;
-    height: 2.344em; /* 25% less than the original 3.125em */
-    width: 4.688em; /* 25% less than the original 6.25em */
+    height: 2.344em;
+    width: 4.688em;
     margin: 0;
     left: 0;
     right: 0;
-    bottom: 3.125em; /* Maintain original bottom position */
-    background-color: transparent; /* Optional: set background color */
+    bottom: 3.125em;
+    background-color: transparent;
     z-index: 19;
   }
   
   a#scroll-btn {
     display: block;
-    height: 3.75em; /* 25% less than the original 5em */
-    width: 2.344em; /* 25% less than the original 3.125em */
-    border: 0.188em solid #ffffff; /* Adjusted border size (25% less) */
+    height: 3.75em;
+    width: 2.344em;
+    border: 0.188em solid #ffffff;
     margin: auto;
     left: 0;
     right: 0;
-    bottom: 0; /* Position at bottom of wrapper */
-    border-radius: 1.125em; /* 25% less than the original 1.5em */
+    bottom: 0;
+    border-radius: 1.125em;
     z-index: 19;
   }
   
@@ -161,9 +161,9 @@ body {
     margin: auto;
     left: 0;
     right: 0;
-    top: 0.45em; /* Adjusted top position based on new height */
-    height: 0.45em; /* 25% less than the original 0.6em */
-    width: 0.45em; /* 25% less than the original 0.6em */
+    top: 0.45em;
+    height: 0.45em;
+    width: 0.45em;
     background-color: #ffffff;
     border-radius: 50%;
     animation: move-down 2s infinite;
@@ -176,7 +176,7 @@ body {
     opacity: 0.5;
   }
   100% {
-    transform: translateY(2.65em); /* Adjusted animation distance */
+    transform: translateY(2em);
     opacity: 0;
   }
 }
