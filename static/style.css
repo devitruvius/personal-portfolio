@@ -130,23 +130,55 @@ body {
     height: 100vh;
 }
 
-.interactive-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 0;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.7);
+.scroll-btn-wrapper {
+    display: block;
+    height: 2.344em; /* 25% less than the original 3.125em */
+    width: 4.688em; /* 25% less than the original 6.25em */
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 3.125em; /* Maintain original bottom position */
+    background-color: transparent; /* Optional: set background color */
+    z-index: 19;
+  }
+  
+  a#scroll-btn {
+    display: block;
+    height: 3.75em; /* 25% less than the original 5em */
+    width: 2.344em; /* 25% less than the original 3.125em */
+    border: 0.188em solid #ffffff; /* Adjusted border size (25% less) */
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Position at bottom of wrapper */
+    border-radius: 1.125em; /* 25% less than the original 1.5em */
+    z-index: 19;
+  }
+  
+  a#scroll-btn:before {
+    display: block;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0.45em; /* Adjusted top position based on new height */
+    height: 0.45em; /* 25% less than the original 0.6em */
+    width: 0.45em; /* 25% less than the original 0.6em */
+    background-color: #ffffff;
     border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 15;
-}
+    animation: move-down 2s infinite;
+    z-index: 19;
+  }
+  
 
-.interactive-arrow:hover {
-    background-color: #5e5e5e;
+@keyframes move-down {
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(2.65em); /* Adjusted animation distance */
+    opacity: 0;
+  }
 }
 
 section#inicio {
