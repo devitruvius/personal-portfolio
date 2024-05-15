@@ -370,12 +370,17 @@ a[href="#sobre"] {
 
 .carousel-control-prev {
     margin-left: -0.6rem;
+    z-index: 19;
 }
 
 .carousel-control-next {
     margin-right: -0.6rem;
+    z-index: 19;
 }
 
+.btn-outline-secondary {
+    z-index: 19;
+}
 }
 
 #carouselPortfolioSmallScreen .col {
@@ -391,6 +396,7 @@ a[href="#sobre"] {
 #carouselPortfolio .card-body, #carouselPortfolioSmallScreen .card-body {
     height: 284px;
 }
+
 
 /* Animação */
 
