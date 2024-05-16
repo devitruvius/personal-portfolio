@@ -1,6 +1,11 @@
 from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
 
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from config import email, senha
 
 
