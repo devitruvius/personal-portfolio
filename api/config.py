@@ -1,2 +1,2 @@
 email = 'contato.dev.vitruvius@gmail.com'
-senha = 'qtqd vwlj lgjj ybiu '
+senha = 'suat kbte mtzv rxid'
