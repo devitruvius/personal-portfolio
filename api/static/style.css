@@ -250,6 +250,49 @@ section#inicio .container {
     text-shadow: 4px 4px 10px #000;
 }
 
+.skills .skill-title {
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #3f3f3f;
+}
+
+.skills .skill-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #3f3f3f;
+    position: relative;
+}
+
+.skills .skill-item h5 {
+    line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #171716;
+    margin-bottom: 10px;
+}
+
+.skills .skill-item h6 {
+    background: #ececec;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skill-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #3f3f3f;
+    background: #fff;
+    border-radius: 50%;
+}
+
 section#inicio div#arraste {
     width: 9rem;
 }
