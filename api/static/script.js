@@ -60,3 +60,18 @@ btnEnviar.addEventListener('click', ()=>{
 setTimeout(()=> {
     document.querySelector('#alerta').style.display = 'none';
 }, 5000)
+
+/* Muda o item-active da Navbar */
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            link.classList.add('active');
+        });
+    });
+});
