@@ -267,6 +267,7 @@ section#inicio .container {
 .skills .skill-item h5 {
     line-height: 18px;
     font-weight: 600;
+    font-size: 1.15rem;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     color: #171716;

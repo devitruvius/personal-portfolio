@@ -8,7 +8,6 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from config import email, senha
 
-
 app = Flask(__name__)
 app.secret_key = 'vitruvian'
 
