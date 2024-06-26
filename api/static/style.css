@@ -252,8 +252,7 @@ section#inicio .container {
 
 .skills .skill-title {
     font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #3f3f3f;
 }
 
@@ -455,7 +454,7 @@ a[href="#sobre"] {
 
 [data-anime] {
     opacity: 0;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 [data-anime="down"] {
