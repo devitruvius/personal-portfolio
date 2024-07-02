@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnEnviar = document.querySelector('#btn-enviar');
     const btnEnviarLoader = document.querySelector('#btn-enviar-loader');
 
+    // Verificar se elementos existem antes de usá-los
+    if (navLinks.length === 0 || sections.length === 0 || !menuMobile || !body || navItems.length === 0 || items.length === 0 || !btnEnviar || !btnEnviarLoader) {
+        console.error('Um ou mais elementos não foram encontrados na página.');
+        return;
+    }
+
     // Seção: Opções do IntersectionObserver
     const observerOptions = {
         root: null,
@@ -20,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const observerCallback = (entries) => {
         entries.forEach(entry => {
             const navLink = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+            if (!navLink) {
+                console.warn(`Link de navegação para a seção #${entry.target.id} não encontrado.`);
+                return;
+            }
             if (entry.isIntersecting && !navLink.classList.contains('active')) {
                 navLinks.forEach(link => link.classList.remove('active'));
                 navLink.classList.add('active');
@@ -33,7 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Seção: Ativar link de navegação inicial
     const linkInicio = document.querySelector('.nav-link[href="#inicio"]');
-    linkInicio.classList.add('active');
+    if (linkInicio) {
+        linkInicio.classList.add('active');
+    } else {
+        console.warn('Link de navegação para a seção #inicio não encontrado.');
+    }
 
     // Seção: Menu Mobile - Abrir e fechar
     menuMobile.addEventListener('click', () => {
@@ -58,6 +72,10 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
+            if (!targetSection) {
+                console.warn(`Seção com id #${targetId} não encontrada.`);
+                return;
+            }
             navLinks.forEach(link => link.classList.remove('active'));
             this.classList.add('active');
             // targetSection.scrollIntoView({ behavior: 'smooth' }); // Desativado
@@ -87,7 +105,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Seção: Remover alerta após 5 segundos
     setTimeout(() => {
-        document.querySelector('#alerta').style.display = 'none';
+        const alerta = document.querySelector('#alerta');
+        if (alerta) {
+            alerta.style.display = 'none';
+        }
     }, 5000);
 
     // Seção: Definir item de navegação ativo com base no hash da URL
