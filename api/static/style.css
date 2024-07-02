@@ -1,12 +1,15 @@
+/* Importações de fontes */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Fonte personalizada */
 @font-face {
     font-family: 'Matrix-Regular';
     src: url(../static/assets/matrix-font.ttf) format('truetype');
 }
 
+/* Configurações gerais */
 html {
     scroll-behavior: smooth;
 }
@@ -21,6 +24,7 @@ body {
     scrollbar-color: #3f3f3f #fff;
 }
 
+/* Header */
 #header {
     position: fixed;
     top: 0;
@@ -50,8 +54,7 @@ body {
     margin: 0;
     padding: 0;
     font-weight: 600;
-    -moz-text-align-last: center;
-    text-align-last: center;
+    text-align: center;
     color: #fff;
 }
 
@@ -59,7 +62,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    justify-items: center;
 }
 
 #header .profile .social-links a {
@@ -75,12 +77,32 @@ body {
     text-decoration: none;
     height: 2.5rem;
     width: 2.5rem;
+    position: relative;
 }
 
-#header .profile .social-links a:hover {
-    background: #a0a0a0;
+#header .profile .social-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s;
 }
 
+#header .profile .social-links a:hover::before {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#header .profile .social-links a .social-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: currentColor;
+}
+
+/* Menu de navegação */
 .nav-menu {
     padding: 1.5rem;
 }
@@ -101,7 +123,7 @@ body {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover>a {
+.nav-menu li:hover > a {
     text-decoration: none;
     color: #e6e6e6;
 }
@@ -115,14 +137,16 @@ body {
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
-.nav-menu li:hover>a i {
+.nav-menu li:hover > a i {
     color: #fff;
 }
 
+/* Conteúdo principal */
 #main {
     margin-left: 300px;
 }
 
+/* Seção inicial */
 #inicio {
     position: relative;
     overflow: hidden;
@@ -130,60 +154,9 @@ body {
     height: 100vh;
 }
 
-.scroll-btn-wrapper {
-    display: block;
-    height: 2.344em;
-    width: 4.688em;
-    margin: 0;
-    left: 0;
-    right: 0;
-    bottom: 3.125em;
-    background-color: transparent;
-    z-index: 19;
-  }
-  
-  a#scroll-btn {
-    display: block;
-    height: 3.75em;
-    width: 2.344em;
-    border: 0.188em solid #ffffff;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 1.125em;
-    z-index: 19;
-  }
-  
-  a#scroll-btn:before {
-    display: block;
-    content: "";
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0.45em;
-    height: 0.45em;
-    width: 0.45em;
-    background-color: #ffffff;
-    border-radius: 50%;
-    animation: move-down 2s infinite;
-    z-index: 19;
-  }
-  
-
-@keyframes move-down {
-  80% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(2em);
-    opacity: 0;
-  }
-}
-
 section#inicio {
     background: url('../static/img/inicio-background-2.jpg');
-    background-attachment:scroll;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -220,6 +193,67 @@ section#inicio .container {
     height: 250px;
 }
 
+section#inicio div#arraste {
+    width: 9rem;
+}
+
+section#inicio div#arraste a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Botão de rolagem */
+.scroll-btn-wrapper {
+    display: block;
+    height: 2.344em;
+    width: 4.688em;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 3.125em;
+    background-color: transparent;
+    z-index: 19;
+}
+
+a#scroll-btn {
+    display: block;
+    height: 3.75em;
+    width: 2.344em;
+    border: 0.188em solid #ffffff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1.125em;
+    z-index: 19;
+}
+
+a#scroll-btn:before {
+    display: block;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0.45em;
+    height: 0.45em;
+    width: 0.45em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: move-down 2s infinite;
+    z-index: 19;
+}
+
+@keyframes move-down {
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(2em);
+        opacity: 0;
+    }
+}
+
+/* Container de vídeo */
 .video-container {
     position: relative;
     overflow: hidden;
@@ -242,14 +276,17 @@ section#inicio .container {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: inset 0 11px 11px -11px rgba(255, 255, 255, 0.959), inset 0 -11px 11px -11px rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 11px 11px -11px rgba(255, 255, 255, 0.959),
+        inset 0 -11px 11px -11px rgba(255, 255, 255, 0.9);
     z-index: 2;
 }
 
+/* Estilos de texto */
 .text-shadow {
     text-shadow: 4px 4px 10px #000;
 }
 
+/* Seção de habilidades */
 .skills .skill-title {
     font-weight: 700;
     margin-bottom: 25px;
@@ -303,15 +340,7 @@ section#inicio .container {
     border-radius: 50%;
 }
 
-section#inicio div#arraste {
-    width: 9rem;
-}
-
-section#inicio div#arraste a {
-    text-decoration: none;
-    color: #fff;
-}
-
+/* Menu para dispositivos móveis */
 i.menu-mobile {
     position: fixed;
     color: #fff;
@@ -337,6 +366,7 @@ i.menu-mobile {
     left: 0;
 }
 
+/* Media queries */
 @media (max-width: 1180px) {
     #header {
         left: -300px;
@@ -358,29 +388,31 @@ i.menu-mobile {
     #main {
         margin-left: 0;
     }
-}
 
-@media (max-width: 1180px) {
     section#sobre h3 {
         margin-top: 2.5rem;
     }
 }
 
-section#habilidades .row {
-    margin-top: 2rem;
+/* Seção de habilidades (media query) */
+@media (max-width: 1180px) {
+    section#habilidades .row {
+        margin-top: 2rem;
+    }
+
+    section#habilidades .progress {
+        margin-top: 0.75rem;
+    }
 }
 
-section#habilidades .progress {
-    margin-top: 0.75rem;
-}
-
+/* Barra de rolagem personalizada */
 *::-webkit-scrollbar {
     width: 10px;
 }
 
 *::-webkit-scrollbar-track {
     width: 12px;
-    box-shadow: inset 0 0 .3rem #00000050;
+    box-shadow: inset 0 0 0.3rem #00000050;
     background-color: #fff;
 }
 
@@ -388,6 +420,7 @@ section#habilidades .progress {
     background-color: #2e2e2c;
 }
 
+/* Outros estilos */
 a[href="#sobre"] {
     text-decoration: none;
     outline: none;
@@ -397,6 +430,7 @@ a[href="#sobre"] {
     background-color: #f5f5f5;
 }
 
+/* Carousel */
 .carousel {
     padding-left: 30px;
     padding-right: 30px;
@@ -404,23 +438,23 @@ a[href="#sobre"] {
 
 .carousel-inner .card {
     position: relative;
-  }
-  
-  .carousel-inner .card .d-flex {
+}
+
+.carousel-inner .card .d-flex {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: auto;
-  }
-  
-  .card-text {
+}
+
+.card-text {
     overflow-y: auto;
     max-height: 168px;
     scrollbar-width: thin;
     scrollbar-color: #c7c7c7 #e0e0e0;
     padding-right: 2px;
-  }
+}
 
 .card-img {
     height: 190px;
@@ -435,7 +469,8 @@ a[href="#sobre"] {
     transition: transform 0.7s ease-in-out;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     background-color: rgba(0, 0, 0, 0.2);
     width: 40px;
     height: 40px;
@@ -453,20 +488,19 @@ a[href="#sobre"] {
 }
 
 @media screen and (min-width: 567px) {
+    .carousel-control-prev {
+        margin-left: -0.6rem;
+        z-index: 19;
+    }
 
-.carousel-control-prev {
-    margin-left: -0.6rem;
-    z-index: 19;
-}
+    .carousel-control-next {
+        margin-right: -0.6rem;
+        z-index: 19;
+    }
 
-.carousel-control-next {
-    margin-right: -0.6rem;
-    z-index: 19;
-}
-
-.btn-outline-secondary {
-    z-index: 19;
-}
+    .btn-outline-secondary {
+        z-index: 19;
+    }
 }
 
 #carouselPortfolioSmallScreen .col {
@@ -479,12 +513,12 @@ a[href="#sobre"] {
     width: 80vw;
 }
 
-#carouselPortfolio .card-body, #carouselPortfolioSmallScreen .card-body {
+#carouselPortfolio .card-body,
+#carouselPortfolioSmallScreen .card-body {
     height: 284px;
 }
 
-/* Animação */
-
+/* Animações */
 [data-anime] {
     opacity: 0;
     transition: 0.5s;
@@ -515,6 +549,7 @@ a[href="#sobre"] {
     transform: none;
 }
 
+/* Outros elementos */
 #btn-enviar-loader {
     display: none;
 }
@@ -526,6 +561,7 @@ a[href="#sobre"] {
     right: 30px;
 }
 
+/* Rodapé */
 #footer {
     padding: 15px;
     color: #fff;
@@ -536,11 +572,11 @@ a[href="#sobre"] {
     width: 300px;
     z-index: 16;
     background-color: #000000;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 @media (max-width: 1012px) {
-    #footer{
+    #footer {
         position: static;
         width: auto;
         padding: 20px 15px;
